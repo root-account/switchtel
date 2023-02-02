@@ -34,7 +34,7 @@ Class Doodad extends Price{
 }
 
 
-function incresePrice(Price $obj, float $percentage) {
+function increasePrice(Price $obj, float $percentage) {
 	$price = $obj->getPrice();
   $new_price = $price + ($price * $percentage / 100);
 	$obj->setPrice($new_price);
@@ -53,7 +53,7 @@ $objDoodad = new Doodad;
 // $objDoodad->setPrice(85);
 
 // Call the function and pass object to increase price by said percentage.
-incresePrice($objDoodad, 2.2);
-incresePrice($objWidget, 2);
+increasePrice($objDoodad, 2.2);
+increasePrice($objWidget, 2);
 
 ?>
