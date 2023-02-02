@@ -15,7 +15,7 @@
      ?>
      <br/>
     <h2>Question 3</h2>
-    <p>Open the file in "question-4/question-4.php and q4.sql"</p>
+    <p>Open the file in "question-3/question-3.php and q3.sql"</p>
     <?php
       // require_once("question-3/question-3.php");
      ?>
