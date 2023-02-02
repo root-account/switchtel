@@ -10,20 +10,20 @@ function checkString($inputString){
 
   for ($i=0; $i < count($stringArray) ; $i++) {
     if (strpos($stringArray[$i], "@") !== false && strpos($stringArray[$i], ".") !== false) {
-      // if more than 1 email push to array
-      // array_push($emailsFound ,$stringArray[$i]);
+      // For more than 1 email push to array
+      array_push($emailsFound ,$stringArray[$i]);
 
       // If only 1 email return here
       return $stringArray[$i];
     }
   }
-  // If more than one email return array here
+  // If checking for more than one email return array instead
   // return $emailsFound;
 }
 
 $userString = "This is a string that contains an email address, and it has to be found, find the email find@me.com in it, also find mekgwele@gmail.com how about just mekgwele@gmail or mekgwele.com";
 
-// If more than 1 email use below code
+// If checking for more than 1 email use below code
 // echo implode(", ",checkString($userString))
 
 // If only 1 email use below code
